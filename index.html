@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Projeto 1</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <h1>Tags Iniciais em HTML</h1>
+    <hr />
+    <h3 id="indice">Índice</h3>
+    <ol>
+      <li><a href="#text">Tags de Texto</a></li>
+      <li><a href="#midia">Tags de Mídia</a></li>
+      <li><a href="#links">Tags de Links</a></li>
+    </ol>
+
+    <h2 id="text">Tags de Texto</h2>
+    <h4><a href="#indice">Retornar</a></h4>
+    <p>
+      As tags de texto HTML são elementos que definem a estrutura e o conteúdo
+      de um documento web. Elas são escritas entre sinais de menor e maior (&lt;
+      e &gt;) e formam pares que delimitam o início e o fim de um elemento. Por
+      exemplo, a tag &lt;p&gt; indica o início de um parágrafo e a tag
+      &lt;/p&gt; indica o fim. <br> <blockquote>As tags têm atributos que especificam
+        propriedades adicionais do elemento, como o seu estilo, classe ou
+        identificador.</blockquote>  Por exemplo, a tag &lt;img&gt; tem o atributo src que
+      indica a fonte da imagem a ser exibida. As tags HTML podem ser aninhadas
+      umas dentro das outras para criar elementos mais complexos e organizados.
+      <br><br>Por exemplo, a tag &lt;div&gt; pode conter várias tags &lt;p&gt; para
+      formar uma seção de texto. Existem muitas tags HTML diferentes que servem
+      para diferentes propósitos, como criar cabeçalhos, listas, tabelas,
+      formulários, links, etc. Para saber mais sobre as tags HTML, consulte a
+      referência oficial do W3C ou algum tutorial online.
+    </p>
+    <h2 id="midia">Tags de Mídia</h2>
+    <h4><a href="#indice">Retornar</a></h4>
+    <p>
+      <sup>As tags de mídia em HTML são elementos que permitem incorporar arquivos de
+        áudio, vídeo e imagens em uma página web. O HTML5 introduziu cinco tags de
+        mídia principais:</sup>
+      <h2><strong
+        >&lt;audio&gt;, &lt;video&gt;, &lt;source&gt;, &lt;embed&gt; e
+        &lt;track&gt;</strong
+      ></h2>. <br /><br />
+      A tag <strong><i>&lt;audio&gt;</i></strong> é usada para embutir arquivos
+      de som em uma página web. Ela pode receber atributos como src, controls,
+      autoplay, loop e muted. Por exemplo:
+      <strong
+        >&lt;audio src=\"musica.mp3\" controls autoplay
+        loop&gt;&lt;/audio&gt;</strong
+      >
+      <br /><br />
+      A tag <strong><i>&lt;video&gt;</i></strong> é usada para incorporar
+      arquivos de vídeo em uma página web. Ela pode receber atributos como src,
+      controls, autoplay, loop, muted, width, height e poster. Por exemplo:
+      <strong
+        >&lt;video src=\"filme.mp4\" controls width=\"800\" height=\"600\"
+        poster=\"capa.png\"&gt;&lt;/video&gt;</strong
+      >
+      <br /><br />
+      A tag <strong><i>&lt;source&gt;</i></strong> é usada para anexar arquivos
+      multimídia como áudio, vídeo e imagens. Ela deve ser usada dentro das tags
+      <strong>&lt;audio&gt; ou &lt;video&gt;</strong> para especificar fontes
+      alternativas para os arquivos de mídia. Ela pode receber atributos como
+      src e type. <br /><br />
+      Por exemplo:
+      <strong
+        >&lt;video controls&gt; &lt;source src=\"filme.mp4\"
+        type=\"video/mp4\"&gt; &lt;source src=\"filme.webm\"
+        type=\"video/webm\"&gt; &lt;/video&gt;</strong
+      >
+      <sub>A tag <strong>&lt;embed&gt;</strong> é usada para incorporar qualquer tipo
+        de conteúdo externo em uma página web, como arquivos Flash, Java applets,
+        PDFs, etc.</sub> <br /><br />
+      Ela pode receber atributos como src, width, height e type. Por exemplo:
+      <strong
+        >&lt;embed src=\"jogo.swf\" width=\"800\" height=\"600\"
+        type=\"application/x-shockwave-flash\"&gt;&lt;/embed&gt;</strong
+      >
+      <br /><br />
+      A tag <strong><i>&lt;track&gt;</i></strong> é usada para adicionar
+      legendas ou descrições a um arquivo de áudio ou vídeo. Ela deve ser usada
+      dentro das tags <strong>&lt;audio&gt;</strong> ou
+      <strong>&lt;video&gt;</strong> e pode receber atributos como src, kind,
+      srclang e label.<br /><br />
+      Por exemplo:
+      <strong
+        >&lt;video src=\"filme.mp4\" controls&gt; &lt;track src=\"legenda.vtt\"
+        kind=\"subtitles\" srclang=\"pt\" label=\"Português\"&gt;
+        &lt;/video&gt;</strong
+      >
+    </p>
+    <h2 id="links">Tags de Links</h2>
+    <h4><a href="#indice">Retornar</a></h4>
+    <p>
+      As tags de link em HTML são usadas para especificar as relações entre o
+      documento atual e um recurso externo, como uma folha de estilo, um ícone
+      ou uma pré-carga. <br />
+      <br />
+      A tag <strong><i>&lt;link&gt;</i></strong> é um elemento vazio que deve
+      ser colocado dentro do elemento <strong>&lt;head&gt;</strong> do
+      documento. <br />
+      <br />
+      A tag <strong><i>&lt;link&gt;</i></strong> tem vários atributos, mas os
+      mais comuns são href, rel e type. O atributo href define o endereço do
+      recurso vinculado, o atributo rel define o tipo de relação entre o
+      documento e o recurso, e o atributo type define o tipo de mídia do
+      recurso. <br />
+      <br />
+      Por exemplo, para vincular uma folha de estilo externa ao documento,
+      podemos usar a seguinte tag: <br />
+      <br />
+
+      <h5><strong
+        >&lt;link href="estilo.css" rel="stylesheet" type="text/css"&gt;</strong
+      ></h5>
+      <br />
+      <br />
+
+      Neste caso, o atributo href aponta para o arquivo estilo.css, o atributo
+      rel indica que o recurso é uma folha de estilo, e o atributo type indica
+      que o recurso é um arquivo de texto com formato CSS. <br />
+      <br />
+      Existem outros valores possíveis para os atributos rel e type, dependendo
+      do tipo de recurso que se quer vincular. <br />
+      <br />
+      As tags de link em HTML são úteis para melhorar a apresentação, a
+      funcionalidade e a acessibilidade dos documentos web.
+    </p>
+  </body>
+</html>
